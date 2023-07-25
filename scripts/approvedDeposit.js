@@ -20,7 +20,7 @@ async function main() {
 
   // Get ERC721A contract instance
   const NFT = await ethers.getContractFactory("nissangtr");
-  const nft = await NFT.attach("0x0f03a12540a17169C06871263D54E7b971d94E9B");
+  const nft = await NFT.attach("0xeA0606f27877D2772ecD5Fef68E97c7d3C4Da9F7");
 
   // Get FXRoot contract instance
   const fxRootAddress = "0xF9bc4a80464E48369303196645e876c8C7D972de";
