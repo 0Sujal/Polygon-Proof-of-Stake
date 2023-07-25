@@ -10,28 +10,32 @@ https://gateway.pinata.cloud/ipfs/QmUrT85Ut7W38GVuJHbxni9FhAwVoQqNYwZoWVHn1AcqCU
 
 #Steps involved in program
 
-npm install
+npm install i
+
 Compile the contracts using: npx hardhat compile
+
 Perform test using command : npx hardhat test
+
 Create an environment file .env In this file add PRIVATE_KEY="your wallet private key", GOERLI_URL and MUMBAI_URL
-To Deploy ERC721 contract to the Goerli Ethereum Testnet, Execute command: npx hardhat run scripts/deploy.js --network goerli An the address will be generate. Paste this address into contarctAddress.js(in metadata folder) and also in batchMint.js(in scripts folder)
-Batch Mint NFTs Run the following command to batch-mint NFTs: npx hardhat run scripts/batchMint.js --network goerli The script will mint the specified number of NFTs and assign them to your address.
-Approve and Deposit NFTs to Polygon Mumbai Run the following commands to approve and deposit the minted NFTs from Ethereum to the Polygon Mumbai network using the FxPortal Bridge: npx hardhat run scripts/approveDeposit.js --network goerli
+
 After installing the dependencies, run the test file by using the following command:
 
-npx hardhat test
 Deploying the ERC721 Contract
+
 Before deploying, make sure to rename ".env.example" to ".env" and provide your wallet private key where required i.e. "PRIVATE_KEY= 'your wallet private key'". 
 
 #Run the following command to deploy the ERC721 contract to the Goerli Ethereum Testnet:
 
-Batch Mint NFTs
+Batch Mint 
+
 Run the following command to batch-mint NFTs using the deployed ERC721 contract:
 
 npx hardhat run scripts/batchMint.js --network goerli
+
 The script will mint the specified number of NFTs and assign them to your address.
 
 Approve and Deposit NFTs to Polygon Mumbai
+
 Run the following commands to approve and deposit the minted NFTs from Ethereum to the Polygon Mumbai network using the FxPortal Bridge:
 
 npx hardhat run scripts/approveDeposit.js --network goerli
